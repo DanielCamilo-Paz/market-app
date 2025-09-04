@@ -25,11 +25,7 @@ INSERT INTO users (
     password
 ) 
 VALUES (
-    'Daniel',
-    'Paz',
-    '215250322',
-    '123456789',
-    '123 Main St',
+    'Daniel', 'Paz', '215250322', '123456789', '123 Main St',
     '1990-01-01',
     'email@gmail.com',
     '1234'
