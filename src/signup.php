@@ -11,9 +11,11 @@ $id_number = $_POST['idnumber'];
 $e_mail = $_POST['email'];
 $p_wd = $_POST['passwd'];
 
+$enc_pass = password_hash($p_wd, PASSWORD_DEFAULT);
+
 //Step 3 create query to insert into
 $query = "INSERT INTO users(firstname,lastname,mobile_number,id_number,email,password)
-Values('$f_name','$l_name','$m_number','$id_number','$e_mail','$p_wd')";
+Values('$f_name','$l_name','$m_number','$id_number','$e_mail','$enc_pass')";
 
 //Step 4  execute query
  $res= pg_query($conn,$query);
