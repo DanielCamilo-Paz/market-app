@@ -8,20 +8,23 @@
 <link rel="icon" type="image/png" href="../icons/market_main.png"/>
 <body bgcolor="#EDE9FE">
     <center><h1>Register</h1></center><br>
-    <table border="1" align="center">
+    <form name = "register-form" action="signup.php" method="post">
+    <table border="6" align="center">
         <tr><td><label>Firstname:</label></td></tr>
-        <tr><td><input type="text"></td></tr>
+        <tr><td><input type="text" name = "fname" required> </td></tr>
         <tr><td><label>Lastname:</label></td></tr>
-        <tr><td><input type="text"></td></tr>
+        <tr><td><input type="text"  name = "lname"required></td></tr>
         <tr><td><label>Mobile Number:</label></td></tr>
-        <tr><td><input type="text"></td></tr>
+        <tr><td><input type="text" name = 'mnumber'required></td></tr>
         <tr><td><label>Identification Number:</label></td></tr>
-        <tr><td><input type="text"></td></tr>
+        <tr><td><input type="text" name = 'idnumber'required></td></tr>
         <tr><td><label>Email:</label></td></tr>
-        <tr><td><input type="email"></td></tr>
+        <tr><td><input type="email" name = 'email'required></td></tr>
         <tr><td><label>Password:</label></td></tr>
-        <tr><td><input type="password"></td></tr>
-        <tr><td><button> Register</button> </td> </tr>
+        <tr><td><input type="password"name ='passwd'required></td></tr>
+        <tr><td><center><button>Register</button></center></td></tr>
+    </form>
         </table>
+
 </body>
-</html>
+</html> 
