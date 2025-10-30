@@ -55,8 +55,9 @@
                     <a href = '#'> <img src = 'icons/Update.png' width = '30'></a>
                     <a href='delete_user.php?userId=" .$row['user_id']."'>
                     <img src = 'icons/delete.png' width = '30'> </a>
-                     <a href = '#'> <img src = 'icons/edit.png'   width = '30'> </a>
-               </td>
+                    <a href='edit_user_form.php?userId=" .$row['user_id']."'>
+                    <img src = 'icons/edit.png' width = '30'> </a>               
+                    </td>
             </tr>
             ";
       }

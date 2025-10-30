@@ -1,6 +1,5 @@
 <?php
 //Step 1 get database access
-
    require('../config/database.php');
    //Step 2 get form-data
    $f_name = trim( $_POST['fname']); //los campos dentro de los corchetes 
