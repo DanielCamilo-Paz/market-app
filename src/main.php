@@ -1,6 +1,11 @@
 <?php
-  echo "Welcome to main!!"
-?>
+//Start o create session
+   session_start();
+
+   if(!isset($_SESSION['session_user_id'])){
+        header('refresh:0;url= error_403.html');
+   }
+  ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +16,9 @@
     <title>Marketapp - Home </title>
 </head>
 <body>
-    
+  <center><b> User:</b>Here print your name </center>
+  <a href = "list_users.php"> List all users </a> |
+    <a href = "logout.php"> Logout </a>
 </body>
 </html>
+
