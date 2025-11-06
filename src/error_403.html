@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 403</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 0 20px;
+            flex-direction: column;
+        }
+
+        .error-container {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .error-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .error-message {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+
+        .error-description {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .error-container a {
+            text-decoration: none;
+            font-size: 1.2em;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .error-container a:hover {
+            background-color: #357ab7;
+            transform: translateY(-3px);
+        }
+
+        .error-container a:active {
+            transform: translateY(1px);
+        }
+    </style>
 </head>
+
 <body>
-    <center><img src = "images/error-403.png"><br>
-    <a href="signin.html">GO TO LOGIN</a>
-</center>
+
+    <div class="error-container">
+        <img src="images/error-403.png" alt="Error 403">
+        <div class="error-message">Access Denied (403)</div>
+        <div class="error-description">You do not have permission to view this page.</div>
+        <a href="signin.html">Go to Login</a>
+    </div>
+
 </body>
+
 </html>
