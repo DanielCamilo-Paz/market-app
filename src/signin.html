@@ -1,19 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market - Register</title>
+    <link rel="icon" type="image/png" href="../src/Icons/Market_main.png" />
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1d1c1c, #dfe4e9); /* Azul y rojo vibrante */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
 
-   <title>Market - Register </title>
-      <link rel="icon" type = "image/png" href="../src/Icons/Market_main.png" />
+        /* Form container styling */
+        .form-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px; /* Bordes más redondeados para un efecto más feliz */
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        /* Logo styling */
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+        }
+
+        /* Heading styling */
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Input fields styling */
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 16px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border: 2px solid #ddd;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #1e90ff; /* Azul brillante */
+            outline: none;
+            box-shadow: 0 0 12px rgba(30, 144, 255, 0.4);
+        }
+
+        /* Button styling */
+        button {
+            width: 100%;
+            padding: 16px;
+            background-color: #7e1bff; /* Rojo brillante */
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ff4c36; /* Rojo más oscuro al pasar el ratón */
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 30px;
+            }
+
+            .logo {
+                width: 120px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <br> 
-  <center>  <img src="images/one_piece.png" width="10%"> </center>
-  <form name ="login form" action="signin.php" method="post">
- <table border="4" align="center">
-  <tr> <td> <input type="email" name = "email" placeholder="hola@gmail.com"required></td></tr>
-  <tr> <td> <input type="password" name = "passwd" placeholder="*****"required></td> </tr>
-  <tr> <td align="center"><button>login</button></tr></td>
 
-  </form>
+    <div class="form-container">
+        <img src="images/one_piece.png" alt="Logo" class="logo">
+        <h1>Login to Market</h1>
+        <form action="signin.php" method="post">
+            <input type="email" name="email" placeholder="hola@gmail.com" required>
+            <input type="password" name="passwd" placeholder="*****" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
 </body>
 </html>
