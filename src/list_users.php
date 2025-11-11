@@ -21,7 +21,7 @@
 <body>
      <table border = "1"class="table table-striped">
      <tr>
-     <th>Photo</th>
+     <th style="text-align: center;">Photo</th>
      <th>Fullname</th>
      <th>E-mail</th>
      <th>Id_number</th>
@@ -36,7 +36,7 @@
     select 
         u.url_photo,
         u.id as user_id,
-        u.firstname || ' '|| u.lastname as lastname,
+        u.firstname || ' '|| u.lastname as fullname,
         u.email,
         u.id_number,
         u.mobile_number,   
@@ -55,7 +55,7 @@
       while ($row = pg_fetch_assoc($result)){
         echo "<tr>
                 <td align='center'><img src=".$row['url_photo']." width='40'></td>
-                <td>".$row['lastname']. "</td>
+                <td>".$row['fullname']. "</td>
                 <td>".$row['email']. "</td>
                 <td>".$row['id_number']. "</td>
                 <td>".$row['mobile_number']. "</td>

@@ -25,6 +25,7 @@
     <title>Document</title>
 </head>
 <body>
+    <center>
 <form name= "Edit-user-form" action = "update_user.php" method = "post">
     <input type = "hidden" name ="iduser" value= "<?php echo $user_id?>" readonly required><br><br>
     <label> Identification Number: </label>
@@ -33,6 +34,9 @@
     <input type = "text" name ="fname" value= "<?php echo $fname?> " required> <br><br>
     <label> LASTNAME: </label>
     <input type = "text" name ="lname" value= "<?php echo $lname?> " required><br><br>
+    <br>
+    <label>USER PHOTO: </label><input type= "file" name="photo_user">
+    <br><br>
     <button> Update user </button>
 </form>
 </body>
